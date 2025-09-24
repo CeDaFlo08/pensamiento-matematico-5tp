@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Joti+One&family=Kode+Mono:wght@400..700&family=Rubik+Vinyl&display=swap');
+@import "tailwindcss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  text-align: center;  
+  min-height: 100vh;
+  margin: 0;              
+  background: rgb(28, 28, 28);
+  color: white;
+}
+
+/* ================= BARRA DE NAVEGACIÓN ================= */
+.barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.titulos {
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Rubik Vinyl", system-ui;
+  color: red;
+}
+
+.barra h1,
+.barra h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.barra h4 {
+  font-size: 12pt;
+}
+
+.barra a {
+  font-family: "Kode Mono", monospace;
+  margin: 5px 20px;
+  color: red;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.barra a:hover {
+  color: rgb(0, 255, 55);
+  transform: scale(1.05);
+}
+
+/* ================= SECCIONES ================= */
+#NosotrosSomos,
+#ObjetivosSeccion,
+#integrantesID {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 180px; /* para que no quede debajo de la barra */
+  box-sizing: border-box;
+}
+
+#NosotrosSomos {
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+}
+
+.textos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Kode Mono", monospace;
+}
+
+.textos .imagenEquipo img {
+  max-width: 300px;
+  height: auto;
+  border: 10px solid white;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textos .imagenEquipo img:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+/* ================= INTEGRANTES ================= */
+#integrantesID {
+  scroll-margin-top: 150px;
+  height: auto; /* que crezca según contenido */
+}
+
+#integrantesID li {
+  font-size: clamp(16px, 2vw, 20px);
+  margin-bottom: 5px;
+}
+
+/* ================= OBJETIVOS ================= */
+#ObjetivosSeccion {
+  font-family: "Kode Mono", monospace;
+  text-align: center;
+  height: auto; /* ajustable */
+}
+
+#ObjetivosSeccion ul {
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .barra {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .barra a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .textos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textos .imagenEquipo img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .barra h1 {
+    font-size: 18px;
+  }
+
+  .barra h4 {
+    font-size: 10pt;
+  }
+
+  #NosotrosSomos, 
+  #ObjetivosSeccion, 
+  #integrantesID {
+    width: 95%;
+    padding-top: 140px;
+  }
+}
