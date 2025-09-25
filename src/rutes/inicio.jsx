@@ -13,6 +13,10 @@ export default function Inicio() {
             <Integrantes/>
             <Objetivos />
             <TrabajosComponente/>
+
+            <footer>
+                
+            </footer>
         
 
         </div>
