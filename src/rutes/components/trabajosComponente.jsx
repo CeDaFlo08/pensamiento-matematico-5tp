@@ -21,6 +21,15 @@ export const TrabajosComponente = () => {
         );
     }
 
+    //trabajo3
+    function abrirProyectoweb() {
+        window.open(
+            '/ProyectoWeb',                // Ruta definida en App.jsx
+            '_blank',                   // Nueva ventana/pestaña
+            'width=500,height=800,scrollbars=yes'
+        );
+    }
+
 
     return (
         <section id='TrabajosSECCION'>
@@ -29,6 +38,8 @@ export const TrabajosComponente = () => {
 
                 <button onClick={abrirPapelote}>PAPELOTE</button>
                 <button onClick={abrirSubeyBaja}>SUBE Y BAJA</button>
+                <button onClick={abrirProyectoweb}>PROYECTRO WEB</button>
+
             </div>
         </section>
     );

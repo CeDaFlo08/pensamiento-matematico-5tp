@@ -4,6 +4,7 @@ import Notfound from './rutes/NoEncontrado';
 
 import { Papelote } from './rutes/components/trabajosIndex/AELO_PAPELOTE.JSX';
 import { Subebaja } from './rutes/components/trabajosIndex/SUBEyBAJA';
+import { Proyectoweb } from './rutes/components/trabajosIndex/PROYECTOweb';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         {/* Ruta para trabajos */}
         <Route path="/papelote" element={<Papelote />} />
         <Route path="/subeYbaja" element={<Subebaja />} />
+        <Route path="/ProyectoWeb" element={<Proyectoweb />} />
 
 
         <Route path="*" element={<Notfound />} />          {/* Ruta por defecto */}

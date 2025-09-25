@@ -24,11 +24,6 @@ export const Papelote = () => {
             <br />
             <audio controls src={cancion}> </audio>
             
-            <video className="videoTrabajo" controls>
-                <source src={video} type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-            </video>
-
         </div>    
     </div>
     )

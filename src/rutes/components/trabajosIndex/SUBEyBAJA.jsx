@@ -1,7 +1,6 @@
 import React from 'react'
 import'./estilosTrabajos.css' 
-import cancion from './Archivos/cancionEquipos.mp3'
-import imagen from './Archivos/papeloteImagen.jpeg'
+
 import video from './Archivos/videosube.mp4'
 
 
