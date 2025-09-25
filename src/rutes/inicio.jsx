@@ -14,11 +14,6 @@ export default function Inicio() {
             <Objetivos />
             <TrabajosComponente/>
 
-            <footer>
-                
-            </footer>
-        
-
         </div>
 
     );
