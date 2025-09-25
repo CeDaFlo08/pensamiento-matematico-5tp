@@ -3,7 +3,7 @@ import { BarraNav } from './components/paginaElementos';
 import { AboutUs } from './components/paginaElementos';
 import { Objetivos } from './components/paginaElementos';
 import { Integrantes } from './components/paginaElementos';
-
+import { TrabajosComponente } from './components/trabajosComponente';
 
 export default function Inicio() {
     return (
@@ -12,6 +12,8 @@ export default function Inicio() {
             <AboutUs />
             <Integrantes/>
             <Objetivos />
+            <TrabajosComponente/>
+        
 
         </div>
 

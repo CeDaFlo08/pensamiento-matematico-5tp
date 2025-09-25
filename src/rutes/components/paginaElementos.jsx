@@ -17,7 +17,7 @@ export function BarraNav() {
                 <a href="#NosotrosSomos">Nosotros somos...</a>
                 <a href="#integrantesID">Integrantes</a>
                 <a href="#ObjetivosSeccion">Objetivos</a>
-                <a href="">Trabajos</a>
+                <a href="#TrabajosSECCION">Trabajos</a>
             </div>
         </div>
     );
