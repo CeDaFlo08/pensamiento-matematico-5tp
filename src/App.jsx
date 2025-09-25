@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './rutes/inicio';
 import Notfound from './rutes/NoEncontrado';
 
-import { Papelote } from './rutes/components/trabajosIndex/AELO_PAPELOTE.JSX';
+import { Papelote } from './rutes/components/trabajosIndex/AELO_PAPELOTE.jsx';
 import { Subebaja } from './rutes/components/trabajosIndex/SUBEyBAJA';
 import { Proyectoweb } from './rutes/components/trabajosIndex/PROYECTOweb';
 
